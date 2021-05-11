@@ -1,0 +1,10 @@
+server:
+  port: 8083
+
+amazon:
+  access:
+    key: <KEY>
+    secret-key: <SECRET>
+  region: us-east-2
+  end-point:
+    url: https://dynamodb.us-east-2.amazonaws.com
