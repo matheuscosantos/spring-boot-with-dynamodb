@@ -42,11 +42,4 @@ public class EmployeeRepository {
         return employeeId;
     }
 
-    private DynamoDBSaveExpression buildExpression(Employee employee){
-        DynamoDBSaveExpression dynamoDBSaveExpression = new DynamoDBSaveExpression();
-        Map<String, ExpectedAttributeValue> expectedMap=new HashMap<>();
-        expectedMap.put("employeeId",new ExpectedAttributeValue(new AttributeValue().withS(employee.getEmployeeId())));
-        dynamoDBSaveExpression.setExpected(expectedMap);
-        return dynamoDBSaveExpression;
-    }
 }
